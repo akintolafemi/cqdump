@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cqdump",
-    "slug": "cqdump",
+    "name": "market-plus",
+    "slug": "market-plus",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -23,6 +23,9 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "android": {
+      "package": "com.supersoft.marketplus"
     }
   }
 }

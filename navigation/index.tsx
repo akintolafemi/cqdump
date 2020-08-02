@@ -7,6 +7,12 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
+import WelcomeScreen from '../screens/WelcomeScreen';
+import LoginScreen from '../screens/LoginScreen';
+import SignUpScreen from '../screens/SignUpScreen';
+import DashboardScreen from '../screens/DashboardScreen';
+import LogoutScreen from '../screens/LogoutScreen';
+import ForgotPwdScreen from '../screens/ForgotPwdScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -26,9 +32,51 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Root" component={BottomTabNavigator} />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+    <Stack.Navigator 
+      initialRouteName="Drawer"
+      screenOptions={{ headerShown: false }}>
+      <Stack.Screen 
+        name="Welcome" 
+        component={WelcomeScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="Logout" 
+        component={LogoutScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="Login" 
+        component={LoginScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="ForgotPwd" 
+        component={ForgotPwdScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="SignUp" 
+        component={SignUpScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="Dashboard" 
+        component={DashboardScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
     </Stack.Navigator>
   );
 }
