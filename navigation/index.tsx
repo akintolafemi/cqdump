@@ -13,6 +13,10 @@ import SignUpScreen from '../screens/SignUpScreen';
 import DashboardScreen from '../screens/DashboardScreen';
 import LogoutScreen from '../screens/LogoutScreen';
 import ForgotPwdScreen from '../screens/ForgotPwdScreen';
+import NewTestScreen from '../screens/NewTestScreen';
+import NewPracticeScreen from '../screens/NewPracticeScreen';
+import NewFlashCardsScreen from '../screens/NewFlashCardsScreen';
+import BonusFeedbackScreen from '../screens/BonusFeedbackScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -73,6 +77,34 @@ function RootNavigator() {
       <Stack.Screen 
         name="Dashboard" 
         component={DashboardScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="NewTest" 
+        component={NewTestScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="NewPractice" 
+        component={NewPracticeScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="NewFlashCards" 
+        component={NewFlashCardsScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="BonusFeedback" 
+        component={BonusFeedbackScreen} 
         options={{ 
           headerShown: false
         }} 

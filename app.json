@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "cqdump",
-    "slug": "fmj.cqdump",
+    "slug": "fmj-cqdump",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "fmjcqdump",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -19,13 +19,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.fmj.cqdump"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
     },
     "android": {
-      "package": "com.supersoft.marketplus"
+      "package": "com.fmj.cqdump"
     }
   }
 }

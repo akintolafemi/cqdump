@@ -1,6 +1,5 @@
 import { StackScreenProps } from '@react-navigation/stack';
 import React, { useState, useEffect, useRef } from "react";
-import useCart from '../hooks/useCart';
 import { AsyncStorage, SafeAreaView, ImageBackground, StyleSheet, StatusBar, ScrollView, Animated, useWindowDimensions, Platform, Text, TouchableOpacity, View, Image } from 'react-native';
 import { Content, Icon, Button } from 'native-base';
 import { Icon as RNEIcon, SearchBar } from 'react-native-elements'
