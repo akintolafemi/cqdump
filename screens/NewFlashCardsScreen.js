@@ -68,7 +68,7 @@ export default function NewFlashCardsScreen({
              </Card>
           </TouchableOpacity>
         </Animatable.View>
-        <Animatable.View animation="flipInX" duration={2000}>
+        <Animatable.View animation="flipInX" duration={1000}>
           <Slider
             minimumValue={10}
             step={10}
@@ -81,7 +81,7 @@ export default function NewFlashCardsScreen({
           <Text style={{color: Colors.colorDark}}>Number of Questions: {numOfQuestions}</Text>
         </Animatable.View>
       </View>
-      <Animatable.View animation="zoomIn" duration={2000} style={{marginBottom: 30, paddingHorizontal: 10}}>
+      <Animatable.View animation="zoomIn" duration={1000} style={{marginBottom: 30, paddingHorizontal: 10}}>
         <TouchableOpacity style={{justifyContent: 'center', flexDirection: 'row'}}>
           <Text style={{color: Colors.colorDark, fontSize: 12}}>Total Questions 100</Text>
         </TouchableOpacity>

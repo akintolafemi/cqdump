@@ -154,7 +154,7 @@ function TabTwoScreen({
           </TouchableOpacity>
         </Animatable.View>
       </View>
-      <Animatable.View animation="zoomIn" duration={2000} style={{marginBottom: 30, paddingHorizontal: 10}}>
+      <Animatable.View animation="zoomIn" duration={1000} style={{marginBottom: 30, paddingHorizontal: 10}}>
         <TouchableOpacity style={{justifyContent: 'center', flexDirection: 'row'}}>
           <Text style={{color: Colors.colorDark, fontSize: 12}}>Total Questions 100</Text>
         </TouchableOpacity>

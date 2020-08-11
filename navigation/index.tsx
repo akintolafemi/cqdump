@@ -7,6 +7,7 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
+import BeforeAppScrees from '../screens/BeforeAppScrees';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
@@ -17,6 +18,7 @@ import NewTestScreen from '../screens/NewTestScreen';
 import NewPracticeScreen from '../screens/NewPracticeScreen';
 import NewFlashCardsScreen from '../screens/NewFlashCardsScreen';
 import BonusFeedbackScreen from '../screens/BonusFeedbackScreen';
+import TestSessionScreen from '../screens/TestSessionScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -37,11 +39,11 @@ const Stack = createStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator 
-      initialRouteName="Drawer"
+      initialRouteName="BeforeApp"
       screenOptions={{ headerShown: false }}>
       <Stack.Screen 
-        name="Welcome" 
-        component={WelcomeScreen} 
+        name="BeforeApp" 
+        component={BeforeAppScrees} 
         options={{ 
           headerShown: false
         }} 
@@ -105,6 +107,13 @@ function RootNavigator() {
       <Stack.Screen 
         name="BonusFeedback" 
         component={BonusFeedbackScreen} 
+        options={{ 
+          headerShown: false
+        }} 
+      />
+      <Stack.Screen 
+        name="TestSession" 
+        component={TestSessionScreen} 
         options={{ 
           headerShown: false
         }} 

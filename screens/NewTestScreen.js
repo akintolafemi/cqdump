@@ -46,19 +46,18 @@ export default function NewTestScreen({
       />
       <View style={styles.body}>
         <Animatable.View animation="flipInY" duration={500}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={ () => navigation.navigate('TestSession') }>
              <Card style={{borderRadius: 5}}>
               <CardItem style={{backgroundColor: Colors.appColorTwo}}>
-                <Body style={{alignItems: 'center'}}>
-                  <Text style={{fontSize: 15, marginBottom: 5, color: Colors.colorWhite}}>Bonus and feedback</Text>
-                  <Text style={{color: Colors.colorWhite, fontSize: 12}}>Unlock more</Text>
+                <Body style={{alignItems: 'center', paddingVertical: 10}}>
+                  <Text style={{fontSize: 13, color: Colors.colorDark}}>Resume Session</Text>
                 </Body>
                </CardItem>
              </Card>
           </TouchableOpacity>
         </Animatable.View>
         <Animatable.View animation="flipInX" duration={1000}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={ () => navigation.navigate('TestSession') }>
              <Card style={{borderRadius: 5}}>
               <CardItem style={{}}>
                 <Body style={{alignItems: 'center', paddingVertical: 10}}>
@@ -68,7 +67,7 @@ export default function NewTestScreen({
              </Card>
           </TouchableOpacity>
         </Animatable.View>
-        <Animatable.View animation="flipInX" duration={2000}>
+        <Animatable.View animation="flipInX" duration={1000}>
           <Slider
             minimumValue={10}
             step={10}
@@ -81,7 +80,7 @@ export default function NewTestScreen({
           <Text style={{color: Colors.colorDark}}>Number of Questions: {numOfQuestions}</Text>
         </Animatable.View>
       </View>
-      <Animatable.View animation="zoomIn" duration={2000} style={{marginBottom: 30, paddingHorizontal: 10}}>
+      <Animatable.View animation="zoomIn" duration={1000} style={{marginBottom: 30, paddingHorizontal: 10}}>
         <TouchableOpacity style={{justifyContent: 'center', flexDirection: 'row'}}>
           <Text style={{color: Colors.colorDark, fontSize: 12}}>Total Questions 100</Text>
         </TouchableOpacity>
